@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #3340b9;
+}
+
+.calculator {
+  background-color: #e0dbee;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(10, 0, 99, 0.3);
+  max-width: 500px;
+  width: 100%;
+}
+
+.display {
+  background-color: #3965c4;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.input {
+  font-size: 24px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  min-height: 24px;
+}
+
+.result {
+  font-size: 36px;
+  font-weight: bold;
+  word-wrap: break-word;
+  min-height: 36px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
+.button {
+  background-color: #3c47db;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+.operator {
+  background-color: #2600ff;
+}
+
+.delete {
+  background-color: #1e32e4;
+}
+
+.button:hover {
+  background-color: #2b4ad4;
+}
+
+.operator:hover {
+  background-color: #3347f8;
+}
+
+.delete:hover {
+  background-color: #3347f8;
+}
+
+.error {
+  color: #ffffff;
+}
+
+#equals {
+  grid-column: span 2;
+}
